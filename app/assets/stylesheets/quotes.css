@@ -1,3 +1,22 @@
-h1 {
-    color:red
+body {
+    background-color:black;
 }
+
+p {
+    color:white;
+    font-family : roboto;
+    font-style: normal;
+    font-size: 22px;
+
+}
+h1 {
+    font-family : roboto;
+    font-size: 31px;
+    color:white;
+}
+
+a:-webkit-any-link {
+    text-decoration: underline;
+    color:white;
+}
+
