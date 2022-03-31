@@ -1,10 +1,10 @@
 
 body {
-    background-color:white;
+    background-color:black !important;
 }
 
 p {
-    color:black;
+    color:white !important;
     font-family : roboto;
     font-style: normal;
     font-size: 16px;
@@ -15,7 +15,7 @@ p {
 h1 {
     font-family : roboto;
     font-size: 26px;
-    color:black;
+    color:white !important;
     margin-left: 10%;
     margin-top: 10%;
 }
@@ -24,7 +24,7 @@ a {
     text-decoration: underline;
     font-family:roboto;
     font-size: 16px;
-    color:black;
+    color:white !important;
 }
 
 .update-new {
@@ -36,20 +36,26 @@ a {
     font-family:roboto;
     color:white;
     text-decoration:none;
-    display:flex;
-    justify-content: flex-end;
+    display:flex !important;
+    justify-content: flex-end !important;
+    
   
 }
 li {
     list-style-type: none;
 }
 .nav-link {
-    color:white;
+    color:white !important;
     text-decoration:none;
     font-family:roboto;
-    display:flex;
-    padding-inline-start: 30px;
+    display:flex !important;
+    justify-content: flex-end !important;
+    padding-inline-start: 30px !important;
     
+}
+
+.champ {
+    font-family: roboto;
 }
 
 .navbar-all{
@@ -58,4 +64,13 @@ li {
 
 .text-author {
     margin-left: 10%;
+}
+
+.form-control {
+    border: 1px solid white !important;
+    background-color: black !important;
+}
+
+.form-label {
+    color: white !important;
 }
