@@ -1,0 +1,11 @@
+<h1>Modifier la citation</h1>
+
+<%= render "form", quote: @quote %>
+
+<br>
+
+<div>
+  <%= link_to "Voir toutes les citations", @quote %> |
+  <%= link_to "Retour", quotes_path %>
+  <%= button_to "Modifier la citation", @quote, method: :update %>
+</div>

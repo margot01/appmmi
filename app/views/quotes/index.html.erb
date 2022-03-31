@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Voir toutes les citations</h1>
+
+<div id="quotes">
+  <% @quotes.each do |quote| %>
+    <%= render quote %>
+    <p>
+      <%= link_to "Modifier la citation", quote %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Écrire une citation", new_quote_path %>
