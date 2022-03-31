@@ -1,9 +1,19 @@
 <h1>Créer une nouvelle citation</h1>
 
-<%= render "form", quote: @quote %>
+<div class="text-author">
+<div class="champ">
+  <label for="exampleFormControlTextarea1" class="form-label">Citation</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<div class="champ">
+  <label for="exampleFormControlInput1" class="form-label">Auteur</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1">
+</div>
+</div>
 
 <br>
 
 <div>
   <%= link_to "Retour", quotes_path %>
+    <%= link_to "Créer une nouvelle citation", new_quote_path %>
 </div>

@@ -1,3 +1,4 @@
+
 body {
     background-color:white;
 }
@@ -47,8 +48,14 @@ li {
     text-decoration:none;
     font-family:roboto;
     display:flex;
+    padding-inline-start: 30px;
+    
 }
 
 .navbar-all{
     background-color: black;
+}
+
+.text-author {
+    margin-left: 10%;
 }
