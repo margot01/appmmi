@@ -1,35 +1,22 @@
 <nav class="navbar-all">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/quotes">
         <%= image_tag 'Group1.png'%>
         </a>
         
         <ul class="navbar-nav">
-
-          <li class="nav-item"><a class="nav-link " href="#">Accueil</a></li>
-          </li>
-          <li class="nav-item"><a class="nav-link " href="#">Écrire une citation</a></li>
-          </li>
-          <li class="nav-item"><a class="nav-link " href="#">Connexion</a></li>
+          <li class="nav-item"><a class="nav-link " href="/quotes/new">Écrire une citation</a></li>
           </li>
         </ul>
 </nav>
 <h1>Créer une nouvelle citation</h1>
 
-<div class="text-author">
-<div class="champ">
-<label for="exampleFormControlTextarea1" class="form-label">Citation</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-<div class="champ">
-  <label for="exampleFormControlInput1" class="form-label">Auteur</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1">
-  
-</div>
-</div>
+<%= render "form", quote: @quote %>
 
 <br>
 
+
 <div>
-  <%= link_to "Retour", quotes_path %>
-   <%= link_to "Écrire une citation", new_quote_path %>
+
+  <%= link_to "Annuler", quotes_path%>
+
 </div>

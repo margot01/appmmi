@@ -22,7 +22,7 @@ class QuotesController < ApplicationController
   # POST /quotes or /quotes.json
   def create
     @quote = Quote.new(quote_params)
-
+    @quote.user = current_user
     respond_to do |format|
       if @quote.save
         format.html { redirect_to quote_url(@quote), notice: "La citation a bien été créée." }
